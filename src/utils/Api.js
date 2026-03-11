@@ -21,6 +21,11 @@ answer is 0-indexed. Make questions realistic and varied.`;
     }),
   });
 
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`API Error: ${res.status} - ${err}`);
+  }
+
   const data = await res.json();
   const text = data.content?.map((c) => c.text || "").join("") || "[]";
   const clean = text.replace(/```json|```/g, "").trim();
