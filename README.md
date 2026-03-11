@@ -7,7 +7,7 @@ AptIQ is a full-stack React app that uses the **Claude AI API** to dynamically g
 ## 🚀 Features
 
 - 🔐 User authentication (signup / login) with localStorage
-- 🤖 AI-generated questions via Claude (Anthropic API)
+- 🤖 AI-generated questions via ( API)
 - 🧠 3 categories: Quantitative, Logical, Verbal
 - ⚙️ 3 difficulty levels: Easy, Medium, Hard
 - ⏱ 10-minute countdown timer per test
@@ -16,13 +16,6 @@ AptIQ is a full-stack React app that uses the **Claude AI API** to dynamically g
 - 🛠 Admin panel to add custom questions
 
 ---
-
-## 🛠 Tech Stack
-
-- **React 18** + Vite
-- **Anthropic Claude API** (`claude-sonnet-4-20250514`)
-- Pure CSS-in-JS (no external UI libraries)
-
 ---
 
 ## ⚙️ Setup
@@ -59,13 +52,6 @@ npm run build
 ```
 
 ---
-
-## 🔑 Admin Login
-
-| Field    | Value      |
-|----------|------------|
-| Username | `admin`    |
-| Password | `admin123` |
 
 > **Change these credentials in `src/constants.js` before deploying!**
 
